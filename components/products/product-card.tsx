@@ -3,13 +3,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Product } from "@/lib/types";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ShoppingCart } from "lucide-react";
+import { useCart } from "@/lib/cart-context";
 
 interface ProductCardProps {
     product: Product;
+    showAddToCart?: boolean;
 }
 
-export default function ProductCard({ product }: ProductCardProps) {
+export default function ProductCard({ product, showAddToCart = false }: ProductCardProps) {
+    const { addToCart } = useCart();
+
+    const handleAddToCart = (e: React.MouseEvent) => {
+        e.preventDefault();
+        addToCart(product);
+    };
+
     return (
         <div className="group bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border border-border hover:border-primary/50 hover:-translate-y-1">
             {/* Image */}
@@ -70,13 +79,24 @@ export default function ProductCard({ product }: ProductCardProps) {
                 )}
 
                 {/* CTA */}
-                <Link
-                    href={`/catalogue/${product.slug}`}
-                    className="inline-flex items-center gap-2 text-primary font-semibold hover:gap-3 transition-all"
-                >
-                    Voir les détails
-                    <ArrowRight size={18} />
-                </Link>
+                <div className="flex gap-2">
+                    <Link
+                        href={`/catalogue/${product.slug}`}
+                        className="flex-1 inline-flex items-center justify-center gap-2 text-primary font-semibold hover:gap-3 transition-all border border-primary rounded-lg px-4 py-2 hover:bg-primary/10"
+                    >
+                        Détails
+                        <ArrowRight size={18} />
+                    </Link>
+                    {showAddToCart && product.price && (
+                        <button
+                            onClick={handleAddToCart}
+                            className="px-4 py-2 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-semibold transition-all flex items-center gap-2"
+                            title="Ajouter au panier"
+                        >
+                            <ShoppingCart size={18} />
+                        </button>
+                    )}
+                </div>
             </div>
         </div>
     );
