@@ -94,7 +94,7 @@ export default function Footer() {
 
                 {/* Bottom */}
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-                    <p>&copy; 2024 ECOMOVE. Tous droits réservés.</p>
+                    <p>&copy; 2025 ECOMOVE. Tous droits réservés.</p>
                     <div className="flex gap-6">
                         <Link href="#" className="hover:text-primary transition-colors">Mentions légales</Link>
                         <Link href="#" className="hover:text-primary transition-colors">Confidentialité</Link>
