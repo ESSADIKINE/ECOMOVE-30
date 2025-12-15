@@ -236,9 +236,9 @@ export const products: Product[] = [
         shortDesc: "Chargeur rapide avec protection et monitoring",
         longDesc: `Chargeur intelligent pour batteries LFP 48V avec protection complète et monitoring en temps réel. Compatible avec l'application mobile ECOMOVE pour suivi de charge à distance.`,
         images: [
-            "/images/products/Batterie LFP (LiFePO₄) – Module 12 kWh.jpeg",
-            "/images/products/Batterie LFP (LiFePO₄) – Module 12 kWh.jpeg",
-            "/images/products/Batterie LFP (LiFePO₄) – Module 12 kWh.jpeg"
+            "/images/products/Chargeur intelligent 48V 20A.jpg",
+            "/images/products/Chargeur intelligent 48V 20A.jpg",
+            "/images/products/Chargeur intelligent 48V 20A.jpg"
         ],
         specs: [
             { label: "Tension", value: "48V" },
@@ -261,9 +261,9 @@ export const products: Product[] = [
         shortDesc: "Convertisseur pour alimentation accessoires 12V",
         longDesc: `Convertisseur DC-DC haute efficacité pour alimenter tous vos accessoires 12V à partir du système 48V principal. Protection contre les surtensions et court-circuits.`,
         images: [
-            "/images/products/Contrôleur BLDC 8 kW.jpeg",
-            "/images/products/Contrôleur BLDC 8 kW.jpeg",
-            "/images/products/Contrôleur BLDC 8 kW.jpeg"
+            "/images/products/Convertisseur DC-DC 48V 12V 30A.jpg",
+            "/images/products/Convertisseur DC-DC 48V 12V 30A.jpg",
+            "/images/products/Convertisseur DC-DC 48V 12V 30A.jpg"
         ],
         specs: [
             { label: "Entrée", value: "48V DC" },
@@ -286,9 +286,9 @@ export const products: Product[] = [
         shortDesc: "Dashboard tactile avec navigation et monitoring",
         longDesc: `Écran tactile 7 pouces affichant toutes les informations essentielles : vitesse, autonomie, niveau batterie, navigation GPS, et monitoring énergétique en temps réel. Interface intuitive et lisible en plein soleil.`,
         images: [
-            "/images/products/Contrôleur BLDC 8 kW.jpeg",
-            "/images/products/Contrôleur BLDC 8 kW.jpeg",
-            "/images/products/Contrôleur BLDC 8 kW.jpeg"
+            "/images/products/écran intelligent LCD 7 pouces.jpg",
+            "/images/products/écran intelligent LCD 7 pouces.jpg",
+            "/images/products/écran intelligent LCD 7 pouces.jpg"
         ],
         specs: [
             { label: "Taille", value: "7 pouces" },
