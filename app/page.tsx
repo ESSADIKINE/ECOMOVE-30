@@ -5,11 +5,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { products, getFeaturedProducts } from "@/lib/data/products";
 import { categories } from "@/lib/data/categories";
-import { testimonials } from "@/lib/data/testimonials";
 import ProductCard from "@/components/products/product-card";
 import CategoryTiles from "@/components/ui/category-tiles";
 import FeatureGrid from "@/components/ui/feature-grid";
-import TestimonialCarousel from "@/components/ui/testimonial-carousel";
 import { ArrowRight, Gauge, Sun, Battery, Users } from "lucide-react";
 
 export default function HomePage() {
@@ -150,25 +148,6 @@ export default function HomePage() {
           </div>
 
           <CategoryTiles categories={categories} />
-        </div>
-      </section>
-
-      {/* Testimonials Section */}
-      <section className="py-24">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 bg-accent/10 text-accent font-semibold rounded-full mb-4">
-              Témoignages clients
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Ils nous font confiance
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Découvrez comment ECOMOVE transforme la mobilité pour nos clients
-            </p>
-          </div>
-
-          <TestimonialCarousel testimonials={testimonials} />
         </div>
       </section>
 
