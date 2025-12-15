@@ -7,6 +7,7 @@ import ProductGallery from "@/components/products/product-gallery";
 import ProductCard from "@/components/products/product-card";
 import { ShoppingCart, FileText, Check, ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
+import { formatPriceMAD } from "@/lib/utils";
 
 interface ProductPageProps {
     params: Promise<{ slug: string }>;
@@ -69,7 +70,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                             {product.price && (
                                 <div className="mb-8">
                                     <p className="text-4xl font-bold text-foreground">
-                                        {product.price.toLocaleString()} MAD
+                                        {formatPriceMAD(product.price)}
                                     </p>
                                     <p className="text-sm text-muted-foreground mt-1">Prix HT, TVA non applicable</p>
                                 </div>

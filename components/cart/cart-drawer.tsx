@@ -4,6 +4,7 @@ import { X, Minus, Plus, ShoppingCart, ArrowRight } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
 import Image from "next/image";
 import Link from "next/link";
+import { formatPriceMAD } from "@/lib/utils";
 
 interface CartDrawerProps {
     isOpen: boolean;
@@ -77,7 +78,7 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
                                             {item.product.name}
                                         </h3>
                                         <p className="text-primary font-bold">
-                                            {(item.product.price || 0).toLocaleString()} MAD
+                                            {formatPriceMAD(item.product.price || 0)}
                                         </p>
 
                                         {/* Quantity Controls */}
@@ -115,7 +116,7 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
                         <div className="flex items-center justify-between mb-6">
                             <span className="text-lg font-semibold">Total</span>
                             <span className="text-2xl font-bold text-primary">
-                                {total.toLocaleString()} MAD
+                                {formatPriceMAD(total)}
                             </span>
                         </div>
                         <Link

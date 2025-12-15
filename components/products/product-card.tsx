@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Product } from "@/lib/types";
 import { ArrowRight, ShoppingCart } from "lucide-react";
 import { useCart } from "@/lib/cart-context";
+import { formatPriceMAD } from "@/lib/utils";
 
 interface ProductCardProps {
     product: Product;
@@ -74,7 +75,7 @@ export default function ProductCard({ product, showAddToCart = false }: ProductC
                 {/* Price */}
                 {product.price && (
                     <p className="text-2xl font-bold text-foreground mb-4">
-                        {product.price.toLocaleString()} MAD
+                        {formatPriceMAD(product.price)}
                     </p>
                 )}
 

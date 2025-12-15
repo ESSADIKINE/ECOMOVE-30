@@ -24,7 +24,7 @@ export const products: Product[] = [
             { label: "Charge utile", value: "250 kg" }
         ],
         tags: ["Solaire", "IA-ready", "Passagers", "Urbain"],
-        price: 25000,
+        price: 77000,
         featured: true
     },
     {
@@ -50,7 +50,7 @@ export const products: Product[] = [
             { label: "Charge utile", value: "400 kg" }
         ],
         tags: ["Solaire", "IA-ready", "Cargo", "Logistique"],
-        price: 28000,
+        price: 70000,
         featured: true
     },
     {
@@ -101,7 +101,7 @@ export const products: Product[] = [
             { label: "Protection", value: "IP65" }
         ],
         tags: ["Haute efficacité", "Brushless", "Silencieux"],
-        price: 2500
+        price: 9000
     },
     {
         id: "controleur-bldc-8kw",
@@ -126,7 +126,7 @@ export const products: Product[] = [
             { label: "Garantie", value: "3 ans" }
         ],
         tags: ["Régénération", "IoT", "Programmable"],
-        price: 1800
+        price: 3500
     },
     {
         id: "kit-bldc-8kw",
@@ -151,7 +151,7 @@ export const products: Product[] = [
             { label: "Délai livraison", value: "72h" }
         ],
         tags: ["Kit complet", "Plug & Play", "Support inclus"],
-        price: 3800
+        price: 13000
     },
     {
         id: "panneau-solaire-100w",
@@ -176,7 +176,7 @@ export const products: Product[] = [
             { label: "Garantie", value: "10 ans" }
         ],
         tags: ["Flexible", "Léger", "MPPT"],
-        price: 450
+        price: 1500
     },
     {
         id: "panneau-solaire-200w",
@@ -201,7 +201,7 @@ export const products: Product[] = [
             { label: "Garantie", value: "10 ans" }
         ],
         tags: ["Flexible", "Haute puissance", "MPPT"],
-        price: 780
+        price: 2500
     },
     {
         id: "panneau-solaire-500w",
@@ -226,7 +226,7 @@ export const products: Product[] = [
             { label: "Garantie", value: "10 ans" }
         ],
         tags: ["Kit complet", "MPPT", "Autonomie max"],
-        price: 1950
+        price: 5500
     },
     {
         id: "chargeur-intelligent",
@@ -276,7 +276,7 @@ export const products: Product[] = [
             { label: "Garantie", value: "2 ans" }
         ],
         tags: ["Haute efficacité", "Protégé", "Compact"],
-        price: 280
+        price: 2300
     },
     {
         id: "ecran-intelligent",
@@ -301,7 +301,7 @@ export const products: Product[] = [
             { label: "Garantie", value: "2 ans" }
         ],
         tags: ["GPS", "Tactile", "Monitoring"],
-        price: 450
+        price: 1700
     }
 ];
 
