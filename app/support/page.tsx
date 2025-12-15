@@ -52,7 +52,7 @@ export default function SupportPage() {
     const faqItems = [
         {
             q: "Comment contacter le support technique ?",
-            a: "Par email à support@ecomove.ma, par téléphone au +212 5XX-XXXXXX ou via le chat en bas à droite."
+            a: "Par email à support@ecomove.ma, par téléphone au +212 670-268130 ou via le chat en bas à droite."
         },
         {
             q: "Quel est le délai de réponse du support ?",

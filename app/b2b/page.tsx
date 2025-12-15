@@ -146,8 +146,8 @@ export default function B2BPage() {
                             <div
                                 key={offer.title}
                                 className={`relative p-8 rounded-2xl ${offer.featured
-                                        ? "bg-gradient-to-br from-primary to-accent text-white ring-4 ring-primary/30 scale-105"
-                                        : "bg-card border border-border"
+                                    ? "bg-gradient-to-br from-primary to-accent text-white ring-4 ring-primary/30 scale-105"
+                                    : "bg-card border border-border"
                                     }`}
                             >
                                 {offer.featured && (
@@ -178,8 +178,8 @@ export default function B2BPage() {
                                 <button
                                     onClick={() => document.getElementById("quote-form")?.scrollIntoView({ behavior: "smooth" })}
                                     className={`w-full py-3 rounded-xl font-bold transition-all ${offer.featured
-                                            ? "bg-white text-primary hover:bg-white/90"
-                                            : "bg-primary text-primary-foreground hover:bg-primary/90"
+                                        ? "bg-white text-primary hover:bg-white/90"
+                                        : "bg-primary text-primary-foreground hover:bg-primary/90"
                                         }`}
                                 >
                                     Demander un devis
@@ -248,7 +248,7 @@ export default function B2BPage() {
                                     value={formData.phone}
                                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                     className="w-full px-4 py-3 bg-background border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"
-                                    placeholder="+212 6XX-XXXXXX"
+                                    placeholder="+212 670-268130"
                                 />
                             </div>
                         </div>
