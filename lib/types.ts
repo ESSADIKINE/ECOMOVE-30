@@ -10,6 +10,10 @@ export interface Product {
     tags: string[];
     price?: number;
     featured?: boolean;
+    rangeKmBase?: number;
+    rangeKmSolarMin?: number;
+    rangeKmSolarMax?: number;
+    rangeLabel?: string;
 }
 
 export interface Category {

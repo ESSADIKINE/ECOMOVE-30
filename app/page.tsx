@@ -65,11 +65,14 @@ export default function HomePage() {
           <div className="container max-w-7xl mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20">
               <div className="text-center">
-                <div className="flex items-center justify-center gap-2 mb-2">
-                  <Gauge className="text-primary" size={24} />
-                  <p className="text-3xl font-bold text-white">80 km</p>
+                <div className="flex flex-col items-center justify-center mb-2">
+                  <div className="flex items-center gap-2 mb-1">
+                    <Gauge className="text-primary" size={24} />
+                    <p className="text-2xl md:text-3xl font-bold text-white">80 km + 20–25 km</p>
+                  </div>
                 </div>
                 <p className="text-white/80 text-sm">Autonomie</p>
+                <p className="text-white/60 text-xs mt-0.5">Gain solaire (PS)</p>
               </div>
               <div className="text-center">
                 <div className="flex items-center justify-center gap-2 mb-2">

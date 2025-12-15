@@ -14,7 +14,7 @@ export const products: Product[] = [
             "/images/products/ECOMOVE-30 – Version Standard (Passagers).jpeg"
         ],
         specs: [
-            { label: "Autonomie", value: "80 km" },
+            { label: "Autonomie", value: "80 km + 20–25 km (Solaire)" },
             { label: "Batterie", value: "LFP 12 kWh" },
             { label: "Moteur", value: "BLDC 8 kW" },
             { label: "Charge solaire", value: "Panneaux 500 Wc" },
@@ -25,7 +25,10 @@ export const products: Product[] = [
         ],
         tags: ["Solaire", "IA-ready", "Passagers", "Urbain"],
         price: 77000,
-        featured: true
+        featured: true,
+        rangeKmBase: 80,
+        rangeKmSolarMin: 20,
+        rangeKmSolarMax: 25
     },
     {
         id: "ecomove-30-cargo",
@@ -40,7 +43,7 @@ export const products: Product[] = [
             "/images/products/ECOMOVE-30 – Version Cargo (Logistique).jpeg"
         ],
         specs: [
-            { label: "Autonomie", value: "80 km" },
+            { label: "Autonomie", value: "80 km + 20–25 km (Solaire)" },
             { label: "Batterie", value: "LFP 12 kWh" },
             { label: "Moteur", value: "BLDC 8 kW" },
             { label: "Charge solaire", value: "Panneaux 500 Wc" },
@@ -51,7 +54,10 @@ export const products: Product[] = [
         ],
         tags: ["Solaire", "IA-ready", "Cargo", "Logistique"],
         price: 70000,
-        featured: true
+        featured: true,
+        rangeKmBase: 80,
+        rangeKmSolarMin: 20,
+        rangeKmSolarMax: 25
     },
     {
         id: "batterie-lfp-12kwh",
